@@ -34,9 +34,15 @@ public String getAge() {
     return String.valueOf(age);
   }
 }
-  private String checkEscalationLevel() {
-    
-counter++; 
+  
+private String checkEscalationLevel() {
+ 
+  counter++;  // +1
+  
+  // sägezahn ...
+ if (counter > 3) {
+  counter = 1;
+ } 
 
       switch (counter) {
         case 1:
